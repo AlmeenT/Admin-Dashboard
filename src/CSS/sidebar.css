@@ -1,0 +1,48 @@
+.sidebar-section {
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    background-color: #040303;
+    color: #fff;
+    width: 240px;  /* 15vw*/
+    padding: 20px;
+}
+
+.sidebar-logo {
+    margin-bottom: 1em;
+}
+
+.menu-nav {
+    margin: 1em 0;
+}
+
+.menu-nav li {
+    margin-bottom: 1.5em;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.menu-nav li:hover::before  {
+    content: "";
+    border: none;
+    border-left: 3px solid #fff;
+    position: absolute;
+    left: -20px;
+    padding: 10px;
+    
+}
+
+.menu-nav li .icon {
+    margin-right: 0.5em;
+}
+
+.divider {
+    max-width: 200px;
+}
+
+.logout-division {
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
