@@ -27,7 +27,7 @@
 }
 
 .myinput {
-    padding: 0.5em;
+    padding: 0.5em !important;
     background-color: beige;
     border: none;
     outline: none;
