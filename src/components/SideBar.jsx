@@ -1,6 +1,8 @@
 import React from 'react'
 import '../CSS/sidebar.css';
-import { FaChartBar, FaSignOutAlt, FaChartPie, FaWallet, FaEnvelope, FaUserAlt } from 'react-icons/fa';
+import { FaChartBar, FaSignOutAlt, FaChartPie, FaEnvelope, FaUserAlt } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+
 const SideBar = () => {
   return (
     <aside className='sidebar-section'>
@@ -13,22 +15,18 @@ const SideBar = () => {
                     <span className='icon'><FaChartBar /></span>
                     <span>Dashboard</span>
                 </li>
-                <li>
-                    <span className='icon'><FaWallet /></span>
-                    <span>Wallet</span>
-                </li>
-                <li>
+                <Link to='/team'><li>
                     <span className='icon'><FaChartPie /></span>
-                    <span>Statistics</span>
-                </li>
-                <li>
+                    <span>Team members</span>
+                </li></Link>
+                <Link to='/client'><li>
                     <span className='icon'><FaEnvelope /></span>
-                    <span>Messages</span>
-                </li>
-                <li>
+                    <span>Clients</span>
+                </li></Link>
+                <Link to='/product'><li>
                     <span className='icon'><FaUserAlt /></span>
-                    <span>Profile</span>
-                </li>
+                    <span>Product</span>
+                </li></Link>
             </ul>
         </div>
         <div className='logout-division'>
@@ -37,10 +35,10 @@ const SideBar = () => {
             </div>
             <div className='logout-container'>
                 <ul className='menu-nav'>
-                    <li>
+                    <Link style={{textDecoration:'none'}} to='/'><li>
                         <span className='icon'><FaSignOutAlt /></span>
                         <span>Logout</span>
-                    </li>
+                    </li></Link>
                 </ul>
             </div>
         </div>
