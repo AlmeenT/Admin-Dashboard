@@ -20,14 +20,14 @@ const submitHandler = (e) => {
         form.email ==='' &&
         form.password ===''
       ){window.location="/"}else{
-        window.location='/Home'
+        window.location='/dashboard'
       }
 }
 
   return (
     <div className='login'>
       <Container>
-      <h1> SH-75 Admin <p></p> </h1>
+      <h1 className='text-center mt-2'> SH-75 Admin <p></p> </h1>
         <Row>
           <Col style={{ marginTop: 50 }} >
             <img src={pic} alt='' style={{width:400, height:300}} /> 
